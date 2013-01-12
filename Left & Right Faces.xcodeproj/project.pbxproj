@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020F708616A00CC800400261 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020F708516A00CC800400261 /* StoreKit.framework */; };
+		025D5E41159CA07900D4B207 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D5E40159CA07900D4B207 /* AudioToolbox.framework */; };
+		025D5E43159CA08000D4B207 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D5E42159CA08000D4B207 /* MessageUI.framework */; };
+		025D5E45159CA0BB00D4B207 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D5E44159CA0BB00D4B207 /* SystemConfiguration.framework */; };
+		02D1F0DE16A0111B00338BFE /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 020F709316A00DBA00400261 /* libGoogleAdMobAds.a */; };
+		02D1F0E616A047BB00338BFE /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 02D1F0E516A047BB00338BFE /* iTunesArtwork@2x */; };
+		02D7651C159950ED00BB496F /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 02D7651B159950ED00BB496F /* iTunesArtwork */; };
+		EC06E75C14A84B2800C8FBCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06E75B14A84B2800C8FBCF /* UIKit.framework */; };
+		EC06E75E14A84B2800C8FBCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06E75D14A84B2800C8FBCF /* Foundation.framework */; };
+		EC06E76014A84B2800C8FBCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06E75F14A84B2800C8FBCF /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EC06E76614A84B2800C8FBCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC06E76414A84B2800C8FBCF /* InfoPlist.strings */; };
+		EC06E76814A84B2800C8FBCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC06E76714A84B2800C8FBCF /* main.m */; };
+		EC06E76C14A84B2800C8FBCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC06E76B14A84B2800C8FBCF /* AppDelegate.m */; };
+		EC06E76F14A84B2800C8FBCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC06E76E14A84B2800C8FBCF /* ViewController.m */; };
+		EC06E77214A84B2800C8FBCF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC06E77014A84B2800C8FBCF /* ViewController.xib */; };
+		EC06E78614A84D7400C8FBCF /* swith.png in Resources */ = {isa = PBXBuildFile; fileRef = EC06E78114A84D7400C8FBCF /* swith.png */; };
+		EC06E78714A84D7400C8FBCF /* redo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC06E78214A84D7400C8FBCF /* redo.png */; };
+		EC06E78814A84D7400C8FBCF /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = EC06E78314A84D7400C8FBCF /* save.png */; };
+		EC06E78914A84D7400C8FBCF /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = EC06E78414A84D7400C8FBCF /* flash.png */; };
+		EC06E78A14A84D7400C8FBCF /* snap.png in Resources */ = {isa = PBXBuildFile; fileRef = EC06E78514A84D7400C8FBCF /* snap.png */; };
+		EC06E79A14A8933800C8FBCF /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC06E79914A8933800C8FBCF /* MyView.m */; };
+		ECE8007E14B33BCA00A08B5F /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE8007C14B33BCA00A08B5F /* icon@2x.png */; };
+		ECE8007F14B33BCA00A08B5F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE8007D14B33BCA00A08B5F /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020F708516A00CC800400261 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		020F708A16A00DBA00400261 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		020F708B16A00DBA00400261 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		020F708C16A00DBA00400261 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		020F708D16A00DBA00400261 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		020F708E16A00DBA00400261 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		020F708F16A00DBA00400261 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		020F709016A00DBA00400261 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		020F709116A00DBA00400261 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		020F709216A00DBA00400261 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		020F709316A00DBA00400261 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		025D5E40159CA07900D4B207 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		025D5E42159CA08000D4B207 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		025D5E44159CA0BB00D4B207 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		02D1F0E516A047BB00338BFE /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		02D7651B159950ED00BB496F /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		EC06E75714A84B2800C8FBCF /* Left & Right Faces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Left & Right Faces.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC06E75B14A84B2800C8FBCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC06E75D14A84B2800C8FBCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC06E75F14A84B2800C8FBCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC06E76314A84B2800C8FBCF /* Left & Right Faces-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Left & Right Faces-Info.plist"; sourceTree = "<group>"; };
+		EC06E76514A84B2800C8FBCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC06E76714A84B2800C8FBCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC06E76914A84B2800C8FBCF /* Left & Right Faces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Left & Right Faces-Prefix.pch"; sourceTree = "<group>"; };
+		EC06E76A14A84B2800C8FBCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC06E76B14A84B2800C8FBCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC06E76D14A84B2800C8FBCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC06E76E14A84B2800C8FBCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC06E77114A84B2800C8FBCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EC06E78114A84D7400C8FBCF /* swith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swith.png; path = "Left & Right Faces/swith.png"; sourceTree = "<group>"; };
+		EC06E78214A84D7400C8FBCF /* redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redo.png; path = "Left & Right Faces/redo.png"; sourceTree = "<group>"; };
+		EC06E78314A84D7400C8FBCF /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save.png; path = "Left & Right Faces/save.png"; sourceTree = "<group>"; };
+		EC06E78414A84D7400C8FBCF /* flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flash.png; path = "Left & Right Faces/flash.png"; sourceTree = "<group>"; };
+		EC06E78514A84D7400C8FBCF /* snap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snap.png; path = "Left & Right Faces/snap.png"; sourceTree = "<group>"; };
+		EC06E79814A8933800C8FBCF /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		EC06E79914A8933800C8FBCF /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		ECE8007C14B33BCA00A08B5F /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		ECE8007D14B33BCA00A08B5F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC06E75414A84B2800C8FBCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D1F0DE16A0111B00338BFE /* libGoogleAdMobAds.a in Frameworks */,
+				020F708616A00CC800400261 /* StoreKit.framework in Frameworks */,
+				025D5E45159CA0BB00D4B207 /* SystemConfiguration.framework in Frameworks */,
+				025D5E43159CA08000D4B207 /* MessageUI.framework in Frameworks */,
+				025D5E41159CA07900D4B207 /* AudioToolbox.framework in Frameworks */,
+				EC06E75C14A84B2800C8FBCF /* UIKit.framework in Frameworks */,
+				EC06E75E14A84B2800C8FBCF /* Foundation.framework in Frameworks */,
+				EC06E76014A84B2800C8FBCF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020F708916A00DBA00400261 /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				020F708A16A00DBA00400261 /* GADAdMobExtras.h */,
+				020F708B16A00DBA00400261 /* GADAdNetworkExtras.h */,
+				020F708C16A00DBA00400261 /* GADAdSize.h */,
+				020F708D16A00DBA00400261 /* GADBannerView.h */,
+				020F708E16A00DBA00400261 /* GADBannerViewDelegate.h */,
+				020F708F16A00DBA00400261 /* GADInterstitial.h */,
+				020F709016A00DBA00400261 /* GADInterstitialDelegate.h */,
+				020F709116A00DBA00400261 /* GADRequest.h */,
+				020F709216A00DBA00400261 /* GADRequestError.h */,
+				020F709316A00DBA00400261 /* libGoogleAdMobAds.a */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
+		EC06E74C14A84B2800C8FBCF = {
+			isa = PBXGroup;
+			children = (
+				020F708916A00DBA00400261 /* AdMob */,
+				020F708516A00CC800400261 /* StoreKit.framework */,
+				025D5E44159CA0BB00D4B207 /* SystemConfiguration.framework */,
+				025D5E42159CA08000D4B207 /* MessageUI.framework */,
+				025D5E40159CA07900D4B207 /* AudioToolbox.framework */,
+				02D7651B159950ED00BB496F /* iTunesArtwork */,
+				02D1F0E516A047BB00338BFE /* iTunesArtwork@2x */,
+				EC06E76114A84B2800C8FBCF /* Left & Right Faces */,
+				EC06E77C14A84C8D00C8FBCF /* Images */,
+				EC06E75A14A84B2800C8FBCF /* Frameworks */,
+				EC06E75814A84B2800C8FBCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC06E75814A84B2800C8FBCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC06E75714A84B2800C8FBCF /* Left & Right Faces.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC06E75A14A84B2800C8FBCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC06E75B14A84B2800C8FBCF /* UIKit.framework */,
+				EC06E75D14A84B2800C8FBCF /* Foundation.framework */,
+				EC06E75F14A84B2800C8FBCF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC06E76114A84B2800C8FBCF /* Left & Right Faces */ = {
+			isa = PBXGroup;
+			children = (
+				EC06E76A14A84B2800C8FBCF /* AppDelegate.h */,
+				EC06E76B14A84B2800C8FBCF /* AppDelegate.m */,
+				EC06E76D14A84B2800C8FBCF /* ViewController.h */,
+				EC06E76E14A84B2800C8FBCF /* ViewController.m */,
+				EC06E77014A84B2800C8FBCF /* ViewController.xib */,
+				EC06E79814A8933800C8FBCF /* MyView.h */,
+				EC06E79914A8933800C8FBCF /* MyView.m */,
+				EC06E76214A84B2800C8FBCF /* Supporting Files */,
+			);
+			path = "Left & Right Faces";
+			sourceTree = "<group>";
+		};
+		EC06E76214A84B2800C8FBCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC06E76314A84B2800C8FBCF /* Left & Right Faces-Info.plist */,
+				EC06E76414A84B2800C8FBCF /* InfoPlist.strings */,
+				EC06E76714A84B2800C8FBCF /* main.m */,
+				EC06E76914A84B2800C8FBCF /* Left & Right Faces-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC06E77C14A84C8D00C8FBCF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ECE8007C14B33BCA00A08B5F /* icon@2x.png */,
+				ECE8007D14B33BCA00A08B5F /* icon.png */,
+				EC06E78114A84D7400C8FBCF /* swith.png */,
+				EC06E78214A84D7400C8FBCF /* redo.png */,
+				EC06E78314A84D7400C8FBCF /* save.png */,
+				EC06E78414A84D7400C8FBCF /* flash.png */,
+				EC06E78514A84D7400C8FBCF /* snap.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC06E75614A84B2800C8FBCF /* Left & Right Faces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC06E77514A84B2800C8FBCF /* Build configuration list for PBXNativeTarget "Left & Right Faces" */;
+			buildPhases = (
+				EC06E75314A84B2800C8FBCF /* Sources */,
+				EC06E75414A84B2800C8FBCF /* Frameworks */,
+				EC06E75514A84B2800C8FBCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Left & Right Faces";
+			productName = "Left & Right Faces";
+			productReference = EC06E75714A84B2800C8FBCF /* Left & Right Faces.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC06E74E14A84B2800C8FBCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EC06E75114A84B2800C8FBCF /* Build configuration list for PBXProject "Left & Right Faces" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = EC06E74C14A84B2800C8FBCF;
+			productRefGroup = EC06E75814A84B2800C8FBCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC06E75614A84B2800C8FBCF /* Left & Right Faces */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC06E75514A84B2800C8FBCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC06E76614A84B2800C8FBCF /* InfoPlist.strings in Resources */,
+				EC06E77214A84B2800C8FBCF /* ViewController.xib in Resources */,
+				EC06E78614A84D7400C8FBCF /* swith.png in Resources */,
+				EC06E78714A84D7400C8FBCF /* redo.png in Resources */,
+				EC06E78814A84D7400C8FBCF /* save.png in Resources */,
+				EC06E78914A84D7400C8FBCF /* flash.png in Resources */,
+				EC06E78A14A84D7400C8FBCF /* snap.png in Resources */,
+				ECE8007E14B33BCA00A08B5F /* icon@2x.png in Resources */,
+				ECE8007F14B33BCA00A08B5F /* icon.png in Resources */,
+				02D7651C159950ED00BB496F /* iTunesArtwork in Resources */,
+				02D1F0E616A047BB00338BFE /* iTunesArtwork@2x in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC06E75314A84B2800C8FBCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC06E76814A84B2800C8FBCF /* main.m in Sources */,
+				EC06E76C14A84B2800C8FBCF /* AppDelegate.m in Sources */,
+				EC06E76F14A84B2800C8FBCF /* ViewController.m in Sources */,
+				EC06E79A14A8933800C8FBCF /* MyView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC06E76414A84B2800C8FBCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC06E76514A84B2800C8FBCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC06E77014A84B2800C8FBCF /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC06E77114A84B2800C8FBCF /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC06E77314A84B2800C8FBCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos6.0;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		EC06E77414A84B2800C8FBCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos6.0;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		EC06E77614A84B2800C8FBCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Left & Right Faces/Left & Right Faces-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Left & Right Faces/Left & Right Faces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos6.0;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC06E77714A84B2800C8FBCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Left & Right Faces/Left & Right Faces-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Left & Right Faces/Left & Right Faces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AdMob\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos6.0;
+				VALID_ARCHS = armv7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC06E75114A84B2800C8FBCF /* Build configuration list for PBXProject "Left & Right Faces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC06E77314A84B2800C8FBCF /* Debug */,
+				EC06E77414A84B2800C8FBCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC06E77514A84B2800C8FBCF /* Build configuration list for PBXNativeTarget "Left & Right Faces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC06E77614A84B2800C8FBCF /* Debug */,
+				EC06E77714A84B2800C8FBCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC06E74E14A84B2800C8FBCF /* Project object */;
+}
