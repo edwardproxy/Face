@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		020F708616A00CC800400261 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020F708516A00CC800400261 /* StoreKit.framework */; };
+		021F53A616D36FBB00FFA03E /* libArrownock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 021F53A516D36FBB00FFA03E /* libArrownock.a */; };
 		025D5E41159CA07900D4B207 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D5E40159CA07900D4B207 /* AudioToolbox.framework */; };
 		025D5E43159CA08000D4B207 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D5E42159CA08000D4B207 /* MessageUI.framework */; };
 		025D5E45159CA0BB00D4B207 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D5E44159CA0BB00D4B207 /* SystemConfiguration.framework */; };
@@ -44,6 +45,8 @@
 		020F709116A00DBA00400261 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
 		020F709216A00DBA00400261 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
 		020F709316A00DBA00400261 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		021F53A516D36FBB00FFA03E /* libArrownock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libArrownock.a; sourceTree = "<group>"; };
+		021F53A716D3700000FFA03E /* Arrownock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arrownock.h; sourceTree = "<group>"; };
 		025D5E40159CA07900D4B207 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		025D5E42159CA08000D4B207 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		025D5E44159CA0BB00D4B207 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,7 @@
 				EC06E75C14A84B2800C8FBCF /* UIKit.framework in Frameworks */,
 				EC06E75E14A84B2800C8FBCF /* Foundation.framework in Frameworks */,
 				EC06E76014A84B2800C8FBCF /* CoreGraphics.framework in Frameworks */,
+				021F53A616D36FBB00FFA03E /* libArrownock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +113,19 @@
 			path = AdMob;
 			sourceTree = "<group>";
 		};
+		021F539E16D36EAD00FFA03E /* Arrownock */ = {
+			isa = PBXGroup;
+			children = (
+				021F53A716D3700000FFA03E /* Arrownock.h */,
+				021F53A516D36FBB00FFA03E /* libArrownock.a */,
+			);
+			name = Arrownock;
+			sourceTree = "<group>";
+		};
 		EC06E74C14A84B2800C8FBCF = {
 			isa = PBXGroup;
 			children = (
+				021F539E16D36EAD00FFA03E /* Arrownock */,
 				020F708916A00DBA00400261 /* AdMob */,
 				020F708516A00CC800400261 /* StoreKit.framework */,
 				025D5E44159CA0BB00D4B207 /* SystemConfiguration.framework */,
@@ -219,6 +233,8 @@
 			knownRegions = (
 				en,
 				de,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = EC06E74C14A84B2800C8FBCF;
 			productRefGroup = EC06E75814A84B2800C8FBCF /* Products */;
@@ -289,10 +305,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN MINGDI (TX7G24VXSC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SUN MINGDI (TX7G24VXSC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -311,8 +327,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos6.0;
+				OTHER_LDFLAGS = "-all_load";
+				PROVISIONING_PROFILE = "A30D89BE-F3F3-4C1B-ACF7-426F1041DF34";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A30D89BE-F3F3-4C1B-ACF7-426F1041DF34";
+				SDKROOT = iphoneos6.1;
 				VALID_ARCHS = armv7;
 			};
 			name = Debug;
@@ -321,10 +339,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN MINGDI (TX7G24VXSC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SUN MINGDI";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -336,9 +354,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos6.0;
+				OTHER_LDFLAGS = "-all_load";
+				PROVISIONING_PROFILE = "A30D89BE-F3F3-4C1B-ACF7-426F1041DF34";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F2CF1F7E-F32D-42D1-9462-DB729459A806";
+				SDKROOT = iphoneos6.1;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = armv7;
 			};
@@ -347,8 +366,8 @@
 		EC06E77614A84B2800C8FBCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SUN MINGDI (TX7G24VXSC)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -365,8 +384,8 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos6.0;
+				PROVISIONING_PROFILE = "A30D89BE-F3F3-4C1B-ACF7-426F1041DF34";
+				SDKROOT = iphoneos6.1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,9 +394,9 @@
 		EC06E77714A84B2800C8FBCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: SUN MINGDI";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: SUN MINGDI";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -394,9 +413,9 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos6.0;
+				PROVISIONING_PROFILE = "F2CF1F7E-F32D-42D1-9462-DB729459A806";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F2CF1F7E-F32D-42D1-9462-DB729459A806";
+				SDKROOT = iphoneos6.1;
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};

@@ -83,23 +83,25 @@
                                                                        386.0,
                                                                        GAD_SIZE_320x50.width,
                                                                         GAD_SIZE_320x50.height)];
+    self.bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0,
+                                                                      0,
+                                                                      GAD_SIZE_320x50.width,
+                                                                      GAD_SIZE_320x50.height)];
 //    self.bannerView = [[GADBannerView alloc]
 //                       initWithFrame:CGRectMake(0.0,
 //                                                386.0,
 //                                                GAD_SIZE_320x50.width,
 //                                                GAD_SIZE_320x50.height)];
-    self.bannerView = [[GADBannerView alloc] initWithFrame:CGRectMake(0.0,
-                                                                      0,
-                                                                      GAD_SIZE_320x50.width,
-                                                                      GAD_SIZE_320x50.height)];
+    
     
     self.bannerView.adUnitID = @"a14f02d98086a14";
-    
     self.bannerView.delegate = self;
     self.bannerView.rootViewController = self.imagePicker;
-//    [self.imagePicker.view addSubview:self.bannerView];
+    
     [self.imagePicker.view addSubview:self.bannerContainerView];
     [self.bannerContainerView addSubview:self.bannerView];
+    
+//    [self.imagePicker.view addSubview:self.bannerView];
 //    [self.imagePicker.view bringSubviewToFront:self.bannerContainerView];
     
     [self.bannerView loadRequest:[GADRequest request]];
@@ -530,10 +532,6 @@
 
 #pragma mark - Admob Delegate
 
-//- (void)adViewDidDismissScreen:(GADBannerView *)adView
-//{
-//    NSLog(@"delegate");
-//}
 //- (void)adViewDidReceiveAd:(GADBannerView *)view
 //{
 //    NSLog(@"delegate");
@@ -545,15 +543,22 @@
 //}
 - (void)adViewWillPresentScreen:(GADBannerView *)adView
 {
-    NSLog(@"delegate");
+//    NSLog(@"delegate");
+//    NSLog(@"name: %@", self.presentedViewController.nibName);
+//    [self.imagePicker dismissViewControllerAnimated:NO completion:NULL];
+//    NSLog(@"name: %@", self.presentedViewController.nibName);
 }
 - (void)adViewWillDismissScreen:(GADBannerView *)adView
 {
 //    NSLog(@"delegate");
 }
-- (void)adViewWillLeaveApplication:(GADBannerView *)adView
-{
+//- (void)adViewDidDismissScreen:(GADBannerView *)adView
+//{
 //    NSLog(@"delegate");
-}
+//}
+//- (void)adViewWillLeaveApplication:(GADBannerView *)adView
+//{
+////    NSLog(@"delegate");
+//}
 
 @end

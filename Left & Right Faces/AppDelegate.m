@@ -10,6 +10,10 @@
 
 #import "ViewController.h"
 
+#import "Arrownock.h"
+
+static NSString *urlString = @"";
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -22,6 +26,16 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    NSString *appKey = @"mAfWPBnTl8oeJ6jpHBfmHth95V1SjWka"; // App Store
+//    NSString *appKey = @"4kdDg4nJRIN2EpDwrqLUaV9n2DB7k4ZE"; // Test
+    [Arrownock setup:appKey delegate:self.viewController];
+
+    NSDictionary *apsDict = [[launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey] objectForKey:@"aps"];
+    if (apsDict) {
+        [self handlePush:apsDict];
+    }
+    
     return YES;
 }
 
@@ -53,6 +67,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+    [application setApplicationIconBadgeNumber:0];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -62,6 +77,41 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [Arrownock setDeviceToken:deviceToken];
+    NSArray *channels = [NSArray arrayWithObjects:@"Face", nil];
+    [Arrownock register:channels overwrite:YES];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    NSDictionary *apsDict = [userInfo objectForKey:@"aps"];
+    [self handlePush:apsDict];
+}
+
+- (void)handlePush:(NSDictionary *)apsDict
+{    
+    NSString *alertString = [apsDict objectForKey:@"alert"];
+//    NSInteger badgeNumber = [[apsDict objectForKey:@"badge"] integerValue];
+    NSArray *alertArray = [alertString componentsSeparatedByString:@"=>"];
+    
+    NSString *messageString = [NSString stringWithFormat:@"%@", [alertArray objectAtIndex:0]];
+    urlString = [alertArray objectAtIndex:1];
+    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"亲~"
+                                                        message:messageString
+                                                       delegate:self
+                                              cancelButtonTitle:@"取消"
+                                              otherButtonTitles:@"去看看", nil];
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 }
 
 @end

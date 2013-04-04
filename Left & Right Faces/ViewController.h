@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "GADBannerView.h"
+#import "Arrownock.h"
 
-@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, GADBannerViewDelegate>
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, GADBannerViewDelegate, ArrownockDelegate>
 
 @property (nonatomic, strong) NSDictionary *dict;
 @property (nonatomic, strong) UIImage *leftImage;
